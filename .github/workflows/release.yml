@@ -57,8 +57,8 @@ jobs:
     - name: Determine version and release type
       id: version
       run: |
-        # 获取最新 tag，如果不存在使用基础版本
-        LATEST_TAG=$(git tag -l | sort -V | tail -n1 || echo "${{ env.BASE_VERSION }}")
+        # 获取最新 tag，排除 dev 和 stable 标签，如果不存在使用基础版本
+        LATEST_TAG=$(git tag -l | grep -vE '^(dev|stable)$' | sort -V | tail -n1 || echo "${{ env.BASE_VERSION }}")
         
         # 解析版本号
         VERSION="$LATEST_TAG"
