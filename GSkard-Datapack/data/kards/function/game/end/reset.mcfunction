@@ -157,3 +157,6 @@ execute if predicate kards:random0.01 run schedule function kards:game/end/oiia 
 
 #生成琉璃夜
 summon minecraft:pig 62 226 -26 {Tags:["Hart_liuli"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{text:"Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}
+
+#DLC-加入语音
+function kards-dlc:svc/join

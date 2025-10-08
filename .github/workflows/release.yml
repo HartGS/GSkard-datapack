@@ -57,8 +57,8 @@ jobs:
     - name: Determine version and release type
       id: version
       run: |
-        # 获取最新 tag，如果不存在使用基础版本
-        LATEST_TAG=$(git tag -l | sort -V | tail -n1 || echo "${{ env.BASE_VERSION }}")
+        # 获取最新 tag，排除 dev 和 stable 标签，如果不存在使用基础版本
+        LATEST_TAG=$(git tag -l | grep -vE '^(dev|stable)$' | sort -V | tail -n1 || echo "${{ env.BASE_VERSION }}")
         
         # 解析版本号
         VERSION="$LATEST_TAG"
@@ -152,15 +152,15 @@ jobs:
           if gh release view stable >/dev/null 2>&1; then
             # 如果存在，则编辑现有 release
             gh release edit stable \
-              --title "Stable Release" \
-              --notes "Latest stable release: ${{ steps.version.outputs.version }}" \
+              --title "稳定版本" \
+              --notes "最新稳定版本: ${{ steps.version.outputs.version }}" \
               --target $CURRENT_COMMIT
             echo "✓ Edited existing stable release to ${{ steps.version.outputs.version }} (commit: $CURRENT_COMMIT)"
           else
             # 如果不存在，则创建新 release
             gh release create stable \
-              --title "Stable Release" \
-              --notes "Latest stable release: ${{ steps.version.outputs.version }}" \
+              --title "稳定版本" \
+              --notes "最新稳定版本: ${{ steps.version.outputs.version }}" \
               --target $CURRENT_COMMIT \
               dist/GSkard-Datapack.zip \
               dist/GSkard-Resourcepack.zip \
@@ -173,16 +173,16 @@ jobs:
           if gh release view dev >/dev/null 2>&1; then
             # 如果存在，则编辑现有 release
             gh release edit dev \
-              --title "Development Release" \
-              --notes "Latest development release: ${{ steps.version.outputs.version }}" \
+              --title "开发版本" \
+              --notes "最新开发版本: ${{ steps.version.outputs.version }}" \
               --target $CURRENT_COMMIT \
               --prerelease
             echo "✓ Edited existing dev release to ${{ steps.version.outputs.version }} (commit: $CURRENT_COMMIT)"
           else
             # 如果不存在，则创建新 release
             gh release create dev \
-              --title "Development Release" \
-              --notes "Latest development release: ${{ steps.version.outputs.version }}" \
+              --title "开发版本" \
+              --notes "最新开发版本: ${{ steps.version.outputs.version }}" \
               --target $CURRENT_COMMIT \
               --prerelease \
               dist/GSkard-Datapack.zip \
