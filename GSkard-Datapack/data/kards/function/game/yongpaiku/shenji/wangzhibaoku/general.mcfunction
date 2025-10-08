@@ -85,8 +85,8 @@ effect clear @a[tag=xiangzhaoyushi] poison
 effect clear @a[tag=xiangzhaoyushi] wither
 effect clear @a[tag=xiangzhaoyushi] levitation
 effect clear @a[tag=xiangzhaoyushi] darkness
-execute as @a[team=red,tag=xiangzhaoyushi] at @s run effect give @e[team=blue,distance=..4] slowness 3 2 false
-execute as @a[team=blue,tag=xiangzhaoyushi] at @s run effect give @e[team=red,distance=..4] slowness 3 2 false
+execute as @a[team=red,tag=xiangzhaoyushi] at @s run effect give @e[team=blue,distance=..4,tag=!spectator] slowness 3 2 false
+execute as @a[team=blue,tag=xiangzhaoyushi] at @s run effect give @e[team=red,distance=..4,tag=!spectator] slowness 3 2 false
 
 scoreboard players add @a[tag=xiangzhaoyushi] xiangzhaoyushi 1
 execute as @a[tag=xiangzhaoyushi] if score @s xiangzhaoyushi matches 1200.. run effect give @s absorption 60 4 false

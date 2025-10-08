@@ -1,0 +1,7 @@
+tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.enze.xinhuo.1.1", fallback: "《恩泽·薪火章》",color: "green",bold:true}]
+tellraw @a [{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.5", fallback: "\"前人燃尽自身 化为火种 为后继者照亮前路\"",color: "gray"}]
+execute as @s[team=red] run tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.enze.jinshen.2", fallback: "本回合 ",color: "gold"},{translate: "kards.function.game.end.win.red_win.1", fallback: "红队",color:"red"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.enze.xinhuo.1.2", fallback: "队伍怪物死亡后 为范围5格内生物提供治疗",color: "gold"}]
+execute as @s[team=blue] run tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.enze.jinshen.2", fallback: "本回合 ",color: "gold"},{translate: "kards.function.game.end.win.blue_win.2", fallback: "蓝队",color:"blue"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.enze.xinhuo.1.2", fallback: "队伍怪物死亡后 为范围5格内生物提供治疗",color: "gold"}]
+
+execute as @s[team=red] run scoreboard players set red jiangshuzhe_xinhuo 1
+execute as @s[team=blue] run scoreboard players set blue jiangshuzhe_xinhuo 1

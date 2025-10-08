@@ -1,2 +1,7 @@
-scoreboard players add @s cishu 1
-tellraw @s [{translate: "kards.function.game.player.talent.enable.yongyuanzhongcheng.3.1", fallback: "「永远忠诚」",color:aqua,bold:true},{translate: "kards.function.game.player.talent.enable.yongyuanzhongcheng.3.2", fallback: "抽一张牌",color:"gold"}]
+execute as @s[tag=!yongyuanzhongcheng_Marker_End] unless function kards:game/player/talent/enable/yongyuanzhongcheng/4 run tag @s add yongyuanzhongcheng_Marker_End
+
+execute as @s[tag=yongyuanzhongcheng_Marker_End,team=red] if predicate {condition:"random_chance",chance:0.08} as @a[team=red,tag=Talent_yongyuanzhongcheng] run function kards:game/player/talent/enable/yongyuanzhongcheng/5
+
+execute as @s[tag=yongyuanzhongcheng_Marker_End,team=blue] if predicate {condition:"random_chance",chance:0.08} as @a[team=blue,tag=Talent_yongyuanzhongcheng] run function kards:game/player/talent/enable/yongyuanzhongcheng/5
+
+kill @s[tag=yongyuanzhongcheng_Marker_End]

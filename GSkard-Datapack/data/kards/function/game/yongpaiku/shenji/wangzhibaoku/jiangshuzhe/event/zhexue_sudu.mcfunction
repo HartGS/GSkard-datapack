@@ -1,5 +1,0 @@
-
-tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.bolun.1", fallback: "本回合讲述的故事是...",color: "white"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zhexue_diyu.1", fallback: "《哲学》",color: "dark_aqua",bold: true},{translate: "kards.function.game.random_start.event.zainanzhixing.3", fallback: "——",color:"white"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zhexue_sudu.1", fallback: "迅捷",color: "blue",bold: true},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zhexue_sudu.2", fallback: "   [本回合内 对应队伍生物获得速度2]",color: "gray"}]
-execute if entity @s[team=red] run scoreboard players set 红队_讲述者 jiangshuzhe_sudu 1
-execute if entity @s[team=blue] run scoreboard players set 蓝队_讲述者 jiangshuzhe_sudu 1
-tellraw @a {translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zhexue_diyu.4", fallback: "在这个篇章 百家争鸣 各表一枝",color: "dark_gray",italic: true}

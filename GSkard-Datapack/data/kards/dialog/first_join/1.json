@@ -1,7 +1,7 @@
 {
     "type": "notice",
     "title": {
-        "type": "text",
+        
         "color": "gold",
         "bold": true,
         "translate": "json.kards.dialog.first_join.1.71",

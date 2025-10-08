@@ -124,6 +124,6 @@ tag @n[tag=copy,type=item] remove copy
 execute if entity @s[team=red] if entity @a[team=red,gamemode=adventure,tag=!shenzhiyishou] as @r[team=red,gamemode=adventure,tag=!shenzhiyishou] run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 execute if entity @s[team=blue] if entity @a[team=blue,gamemode=adventure,tag=!shenzhiyishou] as @r[team=blue,gamemode=adventure,tag=!shenzhiyishou] run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 
-tellraw @a [{selector:"@a[tag=shenzhiyishou]"},{translate: "kards.function.game.yongpaiku.shenji.shenzhiyishou.2.1", fallback: "的牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{translate: "kards.function.game.yongpaiku.fashu.shunshouqianyang.2.2", fallback: "偷走了！",color:"aqua"}]
+tellraw @a [{selector:"@a[tag=shenzhiyishou]"},{translate: "kards.function.game.yongpaiku.shenji.shenzhiyishou.2.1", fallback: "的牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{translate: "kards.function.game.yongpaiku.shenji.shenzhiyishou.2.2", fallback: "偷走了！",color:"aqua"}]
 tag @a[tag=shenzhiyishou] remove shenzhiyishou
 kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_11"}},tag=copy_end]

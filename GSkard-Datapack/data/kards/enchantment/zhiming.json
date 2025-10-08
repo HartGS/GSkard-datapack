@@ -20,7 +20,15 @@
             {
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "kards:enchantment/zhiming"
+                    "function": "kards:enchantment/zhiming/attacker"
+                },
+                "enchanted": "attacker",
+                "affected": "attacker"
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "kards:enchantment/zhiming/victim"
                 },
                 "enchanted": "attacker",
                 "affected": "victim"

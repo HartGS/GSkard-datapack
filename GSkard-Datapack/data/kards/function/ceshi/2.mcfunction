@@ -1,53 +1,30 @@
-execute store result score @s Talent_Random_1 run random value 1..20
-execute store result score @s Talent_Random_2 run random value 1..20
-execute store result score @s Talent_Random_3 run random value 1..20
+execute store result score @s tuteng_Health store result score @s tuteng_Health_temp1 store result score @s tuteng_Health_temp2 run data get entity @s Health 1000
 
-execute if score @s Talent_Random_1 = @s Talent_Random_2 run return run function kards:ceshi/2
-execute if score @s Talent_Random_2 = @s Talent_Random_3 run return run function kards:ceshi/2
-execute if score @s Talent_Random_3 = @s Talent_Random_1 run return run function kards:ceshi/2
+#计算受伤量
+scoreboard players operation @s tuteng_Health_last -= @s tuteng_Health
 
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.a
-execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.b
-execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.c
-execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/2
+scoreboard players operation @s tuteng_Health_temp1_ = @s tuteng_Health_last
+scoreboard players operation @s tuteng_Health_temp2_ = @s tuteng_Health_last
 
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.a
-execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.b
-execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.c
-execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/2
+#存当前血量至下一刻
+scoreboard players operation @s tuteng_Health_last = @s tuteng_Health
 
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.a
-execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.b
-execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.c
-execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/2
+#将数值/2以代表♥
+scoreboard players set #system tuteng_Health 2
 
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.A
-execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.B
-execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.C
-execute if score @s Talent_Random_1 = @s Talent_Random_general run return run function kards:ceshi/2
+scoreboard players operation @s tuteng_Health_temp1 /= #system tuteng_Health
+scoreboard players operation @s tuteng_Health_temp2 /= #system tuteng_Health
 
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.A
-execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.B
-execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.C
-execute if score @s Talent_Random_2 = @s Talent_Random_general run return run function kards:ceshi/2
+scoreboard players operation @s tuteng_Health_temp1_ /= #system tuteng_Health
+scoreboard players operation @s tuteng_Health_temp2_ /= #system tuteng_Health
 
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.A
-execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.B
-execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/2
-execute store result score @s Talent_Random_general run data get storage kards:dialog temp.C
-execute if score @s Talent_Random_3 = @s Talent_Random_general run return run function kards:ceshi/2
+#截位
+scoreboard players set #system tuteng_Health 1000
 
-execute store result storage kards:dialog temp.a int 1 run scoreboard players get @s Talent_Random_1
-execute store result storage kards:dialog temp.b int 1 run scoreboard players get @s Talent_Random_2
-execute store result storage kards:dialog temp.c int 1 run scoreboard players get @s Talent_Random_3
+scoreboard players operation @s tuteng_Health_temp1 %= #system tuteng_Health
+scoreboard players operation @s tuteng_Health_temp2 /= #system tuteng_Health
+
+scoreboard players operation @s tuteng_Health_temp1_ %= #system tuteng_Health
+scoreboard players operation @s tuteng_Health_temp2_ /= #system tuteng_Health
+
+tellraw @a [{"selector":"@s"},{translate: "kards.function.ceshi.2.1", fallback: "正在受到",color:"gold",bold:false},{score:{name:"@s",objective:"tuteng_Health_temp2_"},color:"red",bold:false},{translate: "kards.function.ceshi.2.2", fallback: ".",color:"red",bold:false},{score:{name:"@s",objective:"tuteng_Health_temp1_"},color:"red",bold:false},{translate: "kards.function.ceshi.2.3", fallback: "♥",color:"red",bold:false},{translate: "kards.function.ceshi.2.4", fallback: "伤害! 当前血量",color:"gold",bold:false},{score:{name:"@s",objective:"tuteng_Health_temp2"},color:"green",bold:false},{translate: "kards.function.ceshi.2.2", fallback: ".",color:"green",bold:false},{score:{name:"@s",objective:"tuteng_Health_temp1"},color:"green",bold:false},{translate: "kards.function.ceshi.2.3", fallback: "♥",color:"green",bold:false}]

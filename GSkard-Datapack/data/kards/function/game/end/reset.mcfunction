@@ -11,9 +11,9 @@ scoreboard players operation #system tongji_hurt > @a tongji_hurt
 execute as @a if score @s tongji_damage = #system tongji_damage run tag @s add DamageMAX
 execute as @a if score @s tongji_killed = #system tongji_killed run tag @s add KillMAX
 execute as @a if score @s tongji_hurt = #system tongji_hurt run tag @s add HurtMAX
-tellraw @a [{translate: "kards.function.game.end.reset.1", fallback: "[打工人] ",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.2", fallback: " 共造成",color:"green"},{score:{objective:"tongji_damage",name:"#system"}},{translate: "kards.function.game.end.reset.3", fallback: "♥",color:"red"},{translate: "kards.function.game.end.reset.4", fallback: "伤害!",color:"green"}]
-tellraw @a [{translate: "kards.function.game.end.reset.5", fallback: "[超级肉盾] ",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.6", fallback: " 共受到",color:"green"},{score:{objective:"tongji_hurt",name:"#system"}},{translate: "kards.function.game.end.reset.3", fallback: "♥",color:"red"},{translate: "kards.function.game.end.reset.4", fallback: "伤害!",color:"green"}]
-tellraw @a [{translate: "kards.function.game.end.reset.7", fallback: "[杀神] ",color:"green"},{selector:"@a[tag=KillMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.8", fallback: " 杀死了",color:"green"},{score:{objective:"tongji_killed",name:"#system"}},{translate: "kards.function.game.end.reset.9", fallback: "个",color:"red"},{translate: "kards.function.game.end.reset.10", fallback: "生物!",color:"green"}]
+tellraw @a [{translate: "kards.function.game.end.reset.1", fallback: "[打工人] ",color:"green"},{selector:"@a[tag=DamageMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.2", fallback: " 共造成",color:"green"},{score:{objective:"tongji_damage",name:"#system"}},{translate: "kards.function.ceshi.2.3", fallback: "♥",color:"red"},{translate: "kards.function.game.end.reset.3", fallback: "伤害!",color:"green"}]
+tellraw @a [{translate: "kards.function.game.end.reset.4", fallback: "[超级肉盾] ",color:"green"},{selector:"@a[tag=HurtMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.5", fallback: " 共受到",color:"green"},{score:{objective:"tongji_hurt",name:"#system"}},{translate: "kards.function.ceshi.2.3", fallback: "♥",color:"red"},{translate: "kards.function.game.end.reset.3", fallback: "伤害!",color:"green"}]
+tellraw @a [{translate: "kards.function.game.end.reset.6", fallback: "[杀神] ",color:"green"},{selector:"@a[tag=KillMAX]",bold:true,color:"gold"},{translate: "kards.function.game.end.reset.7", fallback: " 杀死了",color:"green"},{score:{objective:"tongji_killed",name:"#system"}},{translate: "kards.function.game.end.reset.8", fallback: "个",color:"red"},{translate: "kards.function.game.end.reset.9", fallback: "生物!",color:"green"}]
 tag @a[tag=DamageMAX] remove DamageMAX
 tag @a[tag=KillMAX] remove KillMAX
 tag @a[tag=HurtMAX] remove HurtMAX
@@ -56,7 +56,7 @@ team empty blue
 team empty red
 team join lobby @a
 #重生点
-spawnpoint @a 59 226 -26 -90
+spawnpoint @a 59 226 -26 0 -90
 #设置难度为和平
 difficulty peaceful
 #清生物
@@ -71,6 +71,12 @@ tag @a remove TouXiang
 tag @a remove linghunshouge
 tag @a remove jinzijue
 tag @a remove zuzhouhujia
+scoreboard players reset jiangshuzhe
+
+kill @e[tag=JiangShuZhe_YeHuo]
+kill @e[tag=JiangShuZhe_yiming_Marker]
+
+tag @e remove JiangShuZhe_yiming_rided
 #重置陷阱
 scoreboard players reset 红队
 scoreboard players reset 蓝队
@@ -128,8 +134,8 @@ scoreboard players set * shengji_zuanshijian 0
 scoreboard players set * shengji_xiajiehejinjian 0
 scoreboard players set 人数 r_touxiang 0
 scoreboard players set 人数 b_touxiang 0
-scoreboard players reset 红队_讲述者
-scoreboard players reset 蓝队_讲述者
+scoreboard players reset red
+scoreboard players reset blue
 scoreboard players reset @a
 scoreboard players reset * r_death
 scoreboard players reset * b_death
@@ -150,4 +156,7 @@ execute as @a at @s run stopsound @s
 execute if predicate kards:random0.01 run schedule function kards:game/end/oiia 1s
 
 #生成琉璃夜
-summon minecraft:pig 62 226 -26 {Tags:["Hart_liuli"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{translate: "kards.function.game.end.reset.11", fallback: "Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}
+summon minecraft:pig 62 226 -26 {Tags:["Hart_liuli"],attributes:[{id:"max_health",base:200}],Health:200,CustomName:[{translate: "kards.function.game.end.reset.10", fallback: "Hart_liuli",bold:true,color:"gold"}],CustomNameVisible:true}
+
+#DLC-加入语音
+function kards-dlc:svc/join

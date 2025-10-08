@@ -1,33 +1,6 @@
 {
     "values": [
-        "kards:lairichanghuan",
-        "kards:hunduntuteng",
-        "kards:molifushi",
-        "kards:chuanci",
-        "kards:zibao",
-        "kards:huoyan",
-        "kards:tianshenshibanjia",
-        "kards:kunanyaolan",
-        "kards:kunanyaolan_wuli",
-        "kards:qinglvqianmou",
-        "kards:silie",
-        "kards:silingfashu",
-        "kards:chujue",
-        "kards:junlintianxia",
-        "kards:move_or_die",
-        "kards:diaolingtaidao",
-        "kards:la",
-        "kards:chan",
-        "kards:peiyangshi",
-        "minecraft:mace_smash",
-        "kards:zhongshang",
-        "minecraft:freeze",
-        "kards:duming",
-        "minecraft:arrow",
-        "magic",
-        "kards:flend",
-        "kards:gongsheng",
-        "kards:zhongyanzhixing",
-        "kards:xixuegui"
+        "#kards:pojia",
+        "#kards:putong"
     ]
 }

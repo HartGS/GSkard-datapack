@@ -1,0 +1,7 @@
+tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zaizhang.neishang.1.1", fallback: "《灾章·内伤章》",color: "dark_red",bold:true}]
+tellraw @a [{translate: "kards.function.game.paiku.yansheng.busituteng.hundun.5", fallback: "\"五脏俱损 力由内竭\"",color: "gray"}]
+execute as @s[team=red] run tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zaizhang.neishang.1.2", fallback: "本回合内",color:"gold"},{translate: "kards.function.game.end.win.blue_win.2", fallback: "蓝队",color:"blue"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zaizhang.neishang.1.3", fallback: "玩家受伤后获得凋零效果",color: "red"}]
+execute as @s[team=blue] run tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zaizhang.neishang.1.2", fallback: "本回合内",color:"gold"},{translate: "kards.function.game.end.win.red_win.1", fallback: "红队",color:"red"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zaizhang.neishang.1.3", fallback: "玩家受伤后获得凋零效果",color: "red"}]
+
+execute as @s[team=red] run scoreboard players set blue jiangshuzhe_neishang 1
+execute as @s[team=blue] run scoreboard players set red jiangshuzhe_neishang 1

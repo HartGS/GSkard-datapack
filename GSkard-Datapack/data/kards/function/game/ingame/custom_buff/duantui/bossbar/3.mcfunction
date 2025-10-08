@@ -1,4 +1,4 @@
-$bossbar add kards:duantui_$(UUID) [{translate: "json.kards.dialog.paiku.zuzhou.duantui.1235", fallback: "断腿",color:"white",bold:true}]
+$bossbar add kards:duantui_$(UUID) [{translate: "kards.function.game.ingame.custom_buff.duantui.bossbar.3.1", fallback: "断腿:减速 无法跳跃",color:"red",bold:true}]
 $bossbar set kards:duantui_$(UUID) players @s
 $bossbar set kards:duantui_$(UUID) visible true
 

@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {}
+        }
+    },
+    "rewards": {
+        "function": "kards:game/player/player_hurt_entity"
+    }
+}

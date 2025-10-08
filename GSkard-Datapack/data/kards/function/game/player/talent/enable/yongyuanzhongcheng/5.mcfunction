@@ -1,0 +1,2 @@
+scoreboard players add @s cishu 1
+tellraw @s [{translate: "kards.function.game.player.talent.enable.yongyuanzhongcheng.5.1", fallback: "「永远忠诚」",color:aqua,bold:true},{translate: "kards.function.game.player.talent.enable.yongyuanzhongcheng.5.2", fallback: "抽一张牌",color:"gold"}]

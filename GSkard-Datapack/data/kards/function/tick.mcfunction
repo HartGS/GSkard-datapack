@@ -55,3 +55,4 @@ execute as @a if score @s G36K_Use matches 1.. run function kards:guns/g36k/shoo
 execute as @a if score @s G36K_Ex_Use matches 1.. run function kards:guns/ex_g36k/shoot
 
 #测试用
+function kards:ceshi/1

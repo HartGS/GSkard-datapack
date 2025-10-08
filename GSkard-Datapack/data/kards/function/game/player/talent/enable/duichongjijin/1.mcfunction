@@ -1,3 +1,4 @@
-execute store result storage temp kardCountmax int 0.2 run scoreboard players get @s kardCountmax
-execute store result score @s temp run data get storage tmp kardCountmax
-scoreboard players operation @s kardCountmax += @s temp
+scoreboard players set @s temp 8
+scoreboard players operation @s temp_2 = @s kardCountmax
+scoreboard players operation @s temp_2 /= @s temp
+scoreboard players operation @s kardCountmax += @s temp_2

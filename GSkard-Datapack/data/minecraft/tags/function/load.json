@@ -1,6 +1,10 @@
 {
     "values": [
         "kards:load",
-        "kards-dlc:load"
+        "kards-dlc:load",
+        {
+            "id": "kards-dlc:svc/init",
+            "required": false
+        }
     ]
 }

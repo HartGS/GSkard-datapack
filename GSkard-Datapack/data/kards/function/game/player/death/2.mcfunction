@@ -16,8 +16,8 @@ execute as @s[tag=Talent_fushengzuzhou,tag=!Talent_fushengzuzhou_end] run return
 function kards:game/player/death/item/1
 gamemode spectator @s
 
-execute as @s[team=red] as @a[tag=Talent_gongsheng,team=red,gamemode=adventure] run damage @s 1024 kards:gongsheng
-execute as @s[team=blue] as @a[tag=Talent_gongsheng,team=blue,gamemode=adventure] run damage @s 1024 kards:gongsheng
+execute as @s[team=red,tag=!Talent_ranjiweiguang] as @a[tag=Talent_gongsheng,team=red,gamemode=adventure] run damage @s 1024 kards:gongsheng
+execute as @s[team=blue,tag=!Talent_ranjiweiguang] as @a[tag=Talent_gongsheng,team=blue,gamemode=adventure] run damage @s 1024 kards:gongsheng
 
 execute if entity @s[team=red] run scoreboard players add #system r_death 1
 execute if entity @s[team=blue] run scoreboard players add #system b_death 1

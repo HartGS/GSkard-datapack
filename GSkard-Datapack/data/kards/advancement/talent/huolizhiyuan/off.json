@@ -1,0 +1,58 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:all_of",
+                        "terms": [
+                            {
+                                "condition": "inverted",
+                                "term": {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{Tags:[\"silingpucong\"]}"
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "inverted",
+                                "term": {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "type_specific": {
+                                            "type": "slime",
+                                            "size": {
+                                                "min": 1,
+                                                "max": 3
+                                            }
+                                        },
+                                        "type": [
+                                            "slime",
+                                            "magma_cube"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "player": {
+                    "equipment": {
+                        "offhand": {
+                            "items": [
+                                "crossbow"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "kards:game/player/talent/enable/huolizhiyuan/killed_entity"
+    }
+}

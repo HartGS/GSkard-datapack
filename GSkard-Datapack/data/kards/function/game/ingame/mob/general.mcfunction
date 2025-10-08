@@ -11,9 +11,9 @@ execute if entity @e[type=evoker,distance=0.1..] run function kards:game/ingame/
 #幻术师
 execute if entity @e[type=illusioner,distance=0.1..] run function kards:game/ingame/mob/illusioner
 #死灵巫师
-execute if entity @e[tag=silingwushi,distance=0.1..] run function kards:game/ingame/mob/silingwushi
+execute if entity @e[type=skeleton,tag=silingwushi,distance=0.1..] run function kards:game/ingame/mob/silingwushi
 #监守者
-execute if entity @e[tag=warden,distance=0.1..] run function kards:game/ingame/mob/warden
+execute if entity @e[type=warden,tag=warden,distance=0.1..] run function kards:game/ingame/mob/warden
 #舞王僵尸
 execute if entity @e[tag=wuwangjiangshi,distance=0.1..] run function kards:game/ingame/mob/wuwangjiangshi
 #三人成众

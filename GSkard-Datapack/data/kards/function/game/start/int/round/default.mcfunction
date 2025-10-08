@@ -6,6 +6,7 @@ scoreboard players set @a[gamemode=adventure] cishu 5
 scoreboard players operation time roundtime = #system roundtime
 scoreboard players set #system GameRound 2
 scoreboard players set 回合数 GameRound 0
+scoreboard players set #system Relax_Round 0
 
 execute if score #system DifficultyRound matches 1 run return run difficulty hard
 tellraw @a [{translate: "kards.function.game.start.int.round.default.1", fallback: "当前游戏难度：普通",color:"gold",bold:true},{translate: "kards.function.game.start.int.round.default.2", fallback: "\n怪物造成的伤害为1倍",color:"gray",bold:true}]

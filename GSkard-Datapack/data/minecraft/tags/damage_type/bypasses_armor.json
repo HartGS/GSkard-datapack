@@ -1,21 +1,5 @@
 {
     "values": [
-        "kards:lairichanghuan",
-        "kards:hunduntuteng",
-        "kards:molifushi",
-        "kards:chuanci",
-        "kards:zibao",
-        "kards:baomao",
-        "kards:qinglvqianmou",
-        "kards:silie",
-        "kards:chujue",
-        "kards:junlintianxia",
-        "kards:move_or_die",
-        "kards:yonghan",
-        "kards:zhongshang",
-        "kards:duming",
-        "kards:flend",
-        "kards:zhongyanzhixing",
-        "kards:xixuegui"
+        "#kards:pojia"
     ]
 }

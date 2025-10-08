@@ -18,6 +18,3 @@ execute if score @s Talent_gongsheng matches 1 run scoreboard players operation 
 execute if score @s Talent_gongsheng matches 1 run function kards:game/player/talent/enable/gongsheng/2
 
 tag @s remove Talent_gongsheng_temp
-
-execute if score @s Talent_gongsheng matches 0 unless score @s HealBack matches 3.. run scoreboard players set @s HealBack 1
-

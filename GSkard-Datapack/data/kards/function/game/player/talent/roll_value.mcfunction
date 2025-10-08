@@ -1,9 +1,9 @@
-execute store result score @s Talent_Random_1 run random value 1..20
-execute store result score @s Talent_Random_2 run random value 1..20
-execute store result score @s Talent_Random_3 run random value 1..20
-execute store result score @s Talent_Random_4 run random value 1..20
-execute store result score @s Talent_Random_5 run random value 1..20
-execute store result score @s Talent_Random_6 run random value 1..20
+execute store result score @s Talent_Random_1 run random value 1..24
+execute store result score @s Talent_Random_2 run random value 1..24
+execute store result score @s Talent_Random_3 run random value 1..24
+execute store result score @s Talent_Random_4 run random value 1..24
+execute store result score @s Talent_Random_5 run random value 1..24
+execute store result score @s Talent_Random_6 run random value 1..24
 
 execute if score @s Talent_Random_1 = @s Talent_Random_2 run return run function kards:game/player/talent/roll_value
 execute if score @s Talent_Random_1 = @s Talent_Random_3 run return run function kards:game/player/talent/roll_value

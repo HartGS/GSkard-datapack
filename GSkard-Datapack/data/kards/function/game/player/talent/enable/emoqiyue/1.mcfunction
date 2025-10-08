@@ -1,3 +1,4 @@
-execute store result storage temp damage float 0.2 run data get entity @s Health
-scoreboard players add @s cishu 4
+execute store result storage temp damage float 0.08 run attribute @s max_health get
+scoreboard players add @s cishu 3
+scoreboard players add @s kardCount 5
 function kards:game/player/talent/enable/emoqiyue/2 with storage temp

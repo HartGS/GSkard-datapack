@@ -1,0 +1,5 @@
+execute as @s[team=red] at @e[tag=red_marker_7] run summon minecraft:skeleton ~ ~ ~ {Team:blue,Tags:["silingpucong"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d},{id:"safe_fall_distance",base:200}],Health:1.0f,Motion:[0,0.1,0]}
+
+execute as @s[team=blue] at @e[tag=blue_marker_7] run summon minecraft:skeleton ~ ~ ~ {Team:red,Tags:["silingpucong"],active_effects:[{id:"speed",show_particles:0b,duration:-1}],equipment:{head:{id:"minecraft:leather_helmet"}},attributes:[{id:"follow_range",base:100},{id:"minecraft:max_health",base:2.0d},{id:"minecraft:attack_damage",base:2.0d},{id:"minecraft:scale",base:0.5d},{id:"safe_fall_distance",base:200}],Health:1.0f,Motion:[0,0.1,0]}
+
+kill @s

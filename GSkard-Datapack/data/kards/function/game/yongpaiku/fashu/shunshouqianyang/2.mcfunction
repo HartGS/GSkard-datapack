@@ -38,7 +38,7 @@ execute if score @s random_clear matches 33 unless items entity @s container.33 
 execute if score @s random_clear matches 34 unless items entity @s container.34 #kards:kard run return run function kards:game/yongpaiku/fashu/shunshouqianyang/2
 execute if score @s random_clear matches 35 unless items entity @s container.35 #kards:kard run return run function kards:game/yongpaiku/fashu/shunshouqianyang/2
 
-summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"music_disc_11"},Tags:["copy"]}
+summon item ~ ~ ~ {PickupDelay:-1,Item:{id:"minecraft:music_disc_11"},Tags:["copy"]}
 data modify entity @n[tag=copy,type=item] Owner set from entity @n[tag=User] UUID
 
 execute if score @s random_clear matches 0 run data modify entity @n[tag=copy,type=item] Item set from entity @s Inventory.[{Slot:0b}]
@@ -115,9 +115,13 @@ execute if score @s random_clear matches 33 run item replace entity @s container
 execute if score @s random_clear matches 34 run item replace entity @s container.34 with air
 execute if score @s random_clear matches 35 run item replace entity @s container.35 with air
 
+tag @s add Kard_Info_User
+
+execute as @n[tag=copy,type=item] run function kards:game/yongpaiku/use_general/info
+
+tag @s remove Kard_Info_User
+
 data modify entity @n[tag=copy,type=item] PickupDelay set value 1
 tag @n[tag=copy,type=item] add copy_end
 tag @n[tag=copy,type=item] remove copy
 kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_11"}},tag=copy_end]
-
-tellraw @a [{selector:"@s"},{translate: "kards.function.game.yongpaiku.fashu.guohechaiqiao.2.3", fallback: "的一张牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{translate: "kards.function.game.yongpaiku.fashu.shunshouqianyang.2.2", fallback: "偷走了！",color:"aqua"}]

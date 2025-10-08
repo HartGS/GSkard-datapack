@@ -19,4 +19,5 @@ execute if score #system Ready_Num matches 18 run function kards:game/start/numb
 execute if score #system Ready_Num matches 19 run function kards:game/start/number/19start
 execute if score #system Ready_Num matches 20..30 run function kards:game/start/number/20start
 
-
+#DLC-加入语音
+function kards-dlc:svc/join

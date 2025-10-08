@@ -44,5 +44,5 @@ effect give @a[tag=Ready] instant_health 1 200 false
 execute as @a run function kards:game/end/bossbar_reset/1
 
 # Talent
-execute as @a run function kards:game/player/talent/roll_value
-execute as @a run function kards:dialog/talent/show
+execute as @a[gamemode=adventure] run function kards:game/player/talent/roll_value
+execute as @a[gamemode=adventure] run function kards:dialog/talent/show

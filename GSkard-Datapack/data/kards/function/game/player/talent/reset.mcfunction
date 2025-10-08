@@ -7,6 +7,7 @@ attribute @s max_health modifier remove talent-5
 attribute @s armor modifier remove talent-6
 attribute @s attack_damage modifier remove talent-7
 ## Tags
+tag @s remove Talent_kapaiji
 tag @s remove Talent_xukongcunzhe
 tag @s remove Talent_bujintanyu
 tag @s remove Talent_muyuankuanghuan
@@ -22,12 +23,17 @@ tag @s remove Talent_gongsheng
 tag @s remove Talent_gongsheng_temp
 tag @s remove Talent_duichongjijin
 tag @s remove Talent_dianbiaodaozhuan
-tag @s remove Talent_junhengfazhan
-tag @s remove Talent_lingxiansiwei
+tag @s remove Talent_libingmoma
+tag @s remove Talent_touzhiweilai
 tag @s remove Talent_shouhuzhe
 tag @s remove Talent_huafanweijian
 tag @s remove Talent_zhongyanzhixing
 tag @s remove Talent_yongyuanzhongcheng
+tag @s remove Talent_qiongbingduwu
+tag @s remove Talent_qiongbingduwu_Damage
+tag @s remove Talent_zhanshudaji
+tag @s remove Talent_shanjizhanfa
+tag @s remove Talent_haorenliaoliao
 
 ## Bossbar
 execute store result storage temp UUID int 1 run data get entity @s UUID.[0]

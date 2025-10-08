@@ -9,4 +9,8 @@ scoreboard players set #system GameRound 2
 tellraw @a [{translate: "kards.function.game.ingame.round.turns.relax.1", fallback: "当前游戏难度：困难",color:"gold",bold:true},{translate: "kards.function.game.ingame.round.turns.relax.2", fallback: "\n怪物造成的伤害提升至1.5倍 玩家受到的部分伤害提升",color:"gold",bold:true}]
 difficulty hard
 scoreboard players set #system Talent_Random_Mode 2
-execute as @a run function kards:dialog/talent/show
+execute as @a[gamemode=adventure] run function kards:dialog/talent/show
+
+execute as @e[type=#kards:mob,tag=!tuteng] run data modify entity @s NoAI set value 1b
+execute as @e[type=#kards:mob,tag=!tuteng] run data modify entity @s Invulnerable set value 1b
+execute as @e[type=#kards:mob,tag=!tuteng] run data modify entity @s Silent set value 1b

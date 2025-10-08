@@ -43,10 +43,14 @@ execute if score @s dialog matches 1010 run return run function kards:game/playe
 execute if score @s dialog matches 1011 run return run function kards:game/player/talent/set/gongsheng
 execute if score @s dialog matches 1012 run return run function kards:game/player/talent/set/duichongjijin
 execute if score @s dialog matches 1013 run return run function kards:game/player/talent/set/dianbiaodaozhuan
-execute if score @s dialog matches 1014 run return run function kards:game/player/talent/set/junhengfazhan
-execute if score @s dialog matches 1015 run return run function kards:game/player/talent/set/lingxiansiwei
+execute if score @s dialog matches 1014 run return run function kards:game/player/talent/set/libingmoma
+execute if score @s dialog matches 1015 run return run function kards:game/player/talent/set/touzhiweilai
 execute if score @s dialog matches 1016 run return run function kards:game/player/talent/set/shouhuzhe
 execute if score @s dialog matches 1017 run return run function kards:game/player/talent/set/huafanweijian
 execute if score @s dialog matches 1018 run return run function kards:game/player/talent/set/kapaiji
 execute if score @s dialog matches 1019 run return run function kards:game/player/talent/set/zhongyanzhixing
 execute if score @s dialog matches 1020 run return run function kards:game/player/talent/set/yongyuanzhongcheng
+execute if score @s dialog matches 1021 run return run function kards:game/player/talent/set/qiongbingduwu
+execute if score @s dialog matches 1022 run return run function kards:game/player/talent/set/zhanshudaji
+execute if score @s dialog matches 1023 run return run function kards:game/player/talent/set/shanjizhanfa
+execute if score @s dialog matches 1024 run return run function kards:game/player/talent/set/haorenliaoliao

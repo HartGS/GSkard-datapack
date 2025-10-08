@@ -128,18 +128,11 @@ effect give @a[scores={chuandai_xjhj=4}] resistance 1 3 false
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 1.. run damage @s 2 kards:qinglvqianmou
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 1.. run scoreboard players remove @s use_kard 1
 execute as @a if score @s qinglvqianmou matches 1 if score @s use_kard matches 0 run scoreboard players set @s qinglvqianmou 0
-#检测旁观玩家高度/限高
-#execute as @a[gamemode=spectator] if score #system dituxuanze matches 1 positioned -33 0.00 3 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=60,dy=7.2,dx=41] at @s run tp @r[gamemode=adventure]
-#execute as @a[gamemode=spectator] if score #system dituxuanze matches 2 positioned -188 0.00 4 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=67,dy=7.2,dx=45] at @s run tp @r[gamemode=adventure]
-#execute as @a[gamemode=spectator] if score #system dituxuanze matches 3 positioned 103 0.00 6 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=8.2,dx=24] at @s run tp @r[gamemode=adventure]
-#execute as @a[gamemode=spectator] if score #system dituxuanze matches 4 positioned -256.00 0.00 5.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=65,dy=19,dx=42] at @s run tp @r[gamemode=adventure]
-#execute as @a[gamemode=spectator] if score #system dituxuanze matches 5 positioned -100.00 0.00 -1.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=56,dy=18,dx=35] at @s run tp @r[gamemode=adventure]
-#execute as @a[gamemode=spectator] if score #system dituxuanze matches 6 positioned 264 -1.00 -378 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=52,dy=64,dx=87] at @s run tp @r[gamemode=adventure]
-#execute as @a[gamemode=spectator] if score #system dituxuanze matches 7 positioned 179.00 0.0 21.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=64,dy=9,dx=45] at @s run tp @r[gamemode=adventure]
-#execute as @a[gamemode=spectator] if score #system dituxuanze matches 8 positioned 59.00 0.00 104.00 if score #system GameStatus matches 1 if entity @s unless entity @s[dz=54,dy=9,dx=33] at @s run tp @r[gamemode=adventure]
-
-#execute as @a[gamemode=spectator] positioned -249.0 -10 -192.0 if score #system GameStatus matches 2 if entity @s unless entity @s[dz=56,dy=60,dx=77] at @s run tp @r[gamemode=adventure]
-
+#旁观玩家限制
+execute as @a[gamemode=spectator] unless score #system GameStatus matches 0 at @s store result score @s Spectator_lifeNum if entity @a[gamemode=adventure,distance=..40]
+execute as @a[gamemode=spectator] unless score #system GameStatus matches 0 unless score @s Spectator_lifeNum matches 1.. run tp @s @r[gamemode=adventure]
+execute as @a[gamemode=spectator] unless score #system GameStatus matches 0 store result score @s Spectator_Pos.Y run data get entity @s Pos[1]
+execute as @a[gamemode=spectator] unless score #system GameStatus matches 0 unless score @s Spectator_Pos.Y matches 1..30 at @s run tp @s ~ 9 ~ ~ ~
 #玩家死亡
 function kards:game/player/death/1
 

@@ -1,7 +1,7 @@
 {
     "type": "minecraft:multi_action",
     "title": {
-        "type": "text",
+        
         "color": "gray",
         "bold": true,
         "translate": "json.kards.dialog.jiaocheng.main.110",

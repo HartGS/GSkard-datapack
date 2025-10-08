@@ -1,5 +1,0 @@
-
-tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.bolun.1", fallback: "本回合讲述的故事是...",color: "white"},{translate: "kards.function.game.random_start.event.zainanzhixing.2", fallback: "《灾难》",color: "dark_red",bold: true},{translate: "kards.function.game.random_start.event.zainanzhixing.3", fallback: "——",color:"white"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zainan_silie.1", fallback: "撕裂",color: "blue",bold: true},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.zainan_silie.2", fallback: "   [本回合内 敌对玩家受伤时额外受伤一次]",color: "gray"}]
-execute if entity @s[team=red] run scoreboard players set 红队_讲述者 jiangshuzhe_silie 1
-execute if entity @s[team=blue] run scoreboard players set 蓝队_讲述者 jiangshuzhe_silie 1
-tellraw @a {translate: "kards.function.game.random_start.event.zainanzhixing.10", fallback: "在这个篇章 灾难席卷 人们艰难求生",color: "dark_gray",italic: true}

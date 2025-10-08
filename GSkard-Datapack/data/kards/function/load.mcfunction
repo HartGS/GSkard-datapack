@@ -6,6 +6,9 @@ team add Spectator
 team add Running
 #注册bossbar
 bossbar add minecraft:start_game ""
+bossbar set warden_1 color red
+bossbar set warden_2 color red
+bossbar set warden_3 color red
 schedule clear kards:lobby/bossbar/color/1
 schedule clear kards:lobby/bossbar/color/2
 schedule clear kards:lobby/bossbar/color/3
@@ -19,6 +22,8 @@ bossbar add minecraft:pvptime {translate: "kards.function.load.2", fallback: "�
 bossbar set minecraft:roundtime color white
 bossbar set minecraft:pvptime color green
 #注册计分项目
+scoreboard objectives add Spectator_lifeNum dummy
+scoreboard objectives add Spectator_Pos.Y dummy
 scoreboard objectives add Relax_Round dummy
 scoreboard objectives add Skip_Round dummy
 scoreboard objectives add Talent_Enable dummy
@@ -26,8 +31,8 @@ scoreboard objectives add Talent_yongyuanzhongcheng_Temp dummy
 scoreboard objectives add Talent_yongyuanzhongcheng_ dummy
 scoreboard objectives add Talent_yongyuanzhongcheng dummy
 scoreboard objectives add Talent_zhongyanzhixing dummy
-scoreboard objectives add Talent_junhengfazhan_ dummy
-scoreboard objectives add Talent_junhengfazhan dummy
+scoreboard objectives add Talent_libingmoma_ dummy
+scoreboard objectives add Talent_libingmoma dummy
 scoreboard objectives add Talent_gongsheng_damage dummy
 scoreboard objectives add Talent_gongsheng_healback dummy
 scoreboard objectives add Talent_gongsheng dummy
@@ -42,6 +47,12 @@ scoreboard objectives add Talent_bujintanyu dummy
 scoreboard objectives add Talent_Enable_1 dummy
 scoreboard objectives add Talent_Enable_2 dummy
 scoreboard objectives add Talent_dengshenchangjie dummy
+scoreboard objectives add Talent_dengshenchangjie_tellraw dummy
+scoreboard objectives add Talent_qiongbingduwu_KardCount dummy
+scoreboard objectives add Talent_qiongbingduwu_KardCountMax dummy
+scoreboard objectives add Talent_qiongbingduwu_Damage dummy
+scoreboard objectives add Talent_zhanshudaji dummy
+
 scoreboard objectives add Crossbow_RS dummy
 scoreboard objectives add Talent_Random_Mode dummy
 scoreboard objectives add Talent_Random_1 dummy
@@ -175,6 +186,7 @@ scoreboard objectives add PoJia dummy
 scoreboard objectives add shizhongjian_template_1 dummy
 scoreboard objectives add shizhongjian_template_2 dummy
 scoreboard objectives add shizhongjian_template_3 dummy
+scoreboard objectives add enchantment_zhiming_UUID dummy
 scoreboard objectives add enchantment_zhiming_cishu dummy
 scoreboard objectives add fengbaozhanchui_xuneng_Time dummy
 scoreboard objectives add fengbaozhanchui_xuneng dummy
@@ -248,21 +260,20 @@ scoreboard objectives add shengji_tiefu dummy
 scoreboard objectives add shengji_zuanshifu dummy
 scoreboard objectives add random9 dummy
 scoreboard objectives add jianshi minecraft.used:minecraft.bow
-scoreboard objectives add jiangshuzhe_random1 dummy
-scoreboard objectives add jiangshuzhe_random2 dummy
-scoreboard objectives add jiangshuzhe_leibao dummy
-scoreboard objectives add jiangshuzhe_shizhong dummy
-scoreboard objectives add jiangshuzhe_hetun dummy
-scoreboard objectives add jiangshuzhe_sudu dummy
-scoreboard objectives add jiangshuzhe_liliang dummy
-scoreboard objectives add jiangshuzhe_yinshen dummy
-scoreboard objectives add jiangshuzhe_yinshen_jishi dummy
+scoreboard objectives add jiangshuzhe_random dummy
+scoreboard objectives add jiangshuzhe_jinshen dummy
+scoreboard objectives add jiangshuzhe_xinhuo dummy
+scoreboard objectives add jiangshuzhe_neishang dummy
+scoreboard objectives add jiangshuzhe_xiuhuai_Kmax dummy
+scoreboard objectives add jiangshuzhe_xiuhuai_damage dummy
+scoreboard objectives add jiangshuzhe_yehuo_move dummy
+scoreboard objectives add jiangshuzhe_yehuo_target dummy
+scoreboard objectives add jiangshuzhe_yehuo_healthmax dummy
 scoreboard objectives add jiangshuzhe_bolun dummy
-scoreboard objectives add jiangshuzhe_diyu dummy
-scoreboard objectives add jiangshuzhe_jixing dummy
-scoreboard objectives add jiangshuzhe_silie dummy
-scoreboard objectives add jiangshuzhe_silie1 minecraft.custom:minecraft.damage_taken
-scoreboard objectives add jiangshuzhe_silie2 dummy
+scoreboard objectives add jiangshuzhe_shiting dummy
+scoreboard objectives add jiangshuzhe_shiting_time dummy
+scoreboard objectives add jiangshuzhe_yiming dummy
+
 scoreboard objectives add damage_jilu dummy
 scoreboard objectives add r_death dummy
 scoreboard objectives add b_death dummy
@@ -313,6 +324,13 @@ scoreboard objectives add Ready_Num dummy
 scoreboard objectives add chuandai_xjhj dummy
 scoreboard objectives add Color dummy
 scoreboard objectives add tuteng_Health dummy
+scoreboard objectives add tuteng_Health_last dummy
+scoreboard objectives add tuteng_Health_temp1 dummy
+scoreboard objectives add tuteng_Health_temp2 dummy
+scoreboard objectives add tuteng_Health_temp1_ dummy
+scoreboard objectives add tuteng_Health_temp2_ dummy
+scoreboard objectives add tuteng_Health_temp1_last dummy
+scoreboard objectives add tuteng_Health_temp2_last dummy
 scoreboard objectives add hurt_lindongzhikai dummy
 scoreboard objectives add stophurt_lindongzhikai dummy
 scoreboard objectives add in_lindongzhikai dummy
@@ -427,12 +445,12 @@ data modify storage settings kard_count set value \
     juntuan:265,\
     zhuangbei:390,\
     tuteng:13,\
-    fashu:43,\
+    fashu:44,\
     shenji:18,\
     zuzhou:11,\
     xianjing:13,\
     shipin:105\
 }
 
-# GSkard-1.53
-tellraw @a ["==========================\n",{color:"#2a17fd",translate: "kards.function.load.6", fallback: "         "},{color:"#f19013",translate: "kards.function.load.7", fallback: "G"},{color:"#ed7d19",translate: "kards.function.load.8", fallback: "S"},{color:"#ea6a1f",translate: "kards.function.load.9", fallback: "k"},{color:"#e75725",translate: "kards.function.load.10", fallback: "a"},{color:"#e3442b",translate: "kards.function.load.11", fallback: "r"},{color:"#e03131",translate: "kards.function.load.12", fallback: "d"},{color:"gold",translate: "kards.function.load.13", fallback: "已经加载！"},"\n",{color:"aqua",translate: "kards.function.load.14", fallback: "             版本："},{color:"green",translate: "kards.function.load.15", fallback: "1.53"},"\n=========================="]
+# GSkard-1.54
+tellraw @a ["==========================\n",{color:"#2a17fd",translate: "kards.function.load.6", fallback: "         "},{color:"#f19013",translate: "kards.function.load.7", fallback: "G"},{color:"#ed7d19",translate: "kards.function.load.8", fallback: "S"},{color:"#ea6a1f",translate: "kards.function.load.9", fallback: "k"},{color:"#e75725",translate: "kards.function.load.10", fallback: "a"},{color:"#e3442b",translate: "kards.function.load.11", fallback: "r"},{color:"#e03131",translate: "kards.function.load.12", fallback: "d"},{color:"gold",translate: "kards.function.load.13", fallback: "已经加载！"},"\n",{color:"aqua",translate: "kards.function.load.14", fallback: "             版本："},{color:"green",translate: "kards.function.load.15", fallback: "1.54"},"\n=========================="]

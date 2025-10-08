@@ -1,0 +1,3 @@
+tellraw @a [{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.default.1", fallback: "故事的载体高挂于天...\n万象 于此映照 讲述者",color: "white"},{selector: "@a[tag=jiangshuzhe]"},{translate: "kards.function.game.yongpaiku.shenji.wangzhibaoku.jiangshuzhe.event.default.2", fallback: "讲述本回合的故事",color: "white"}]
+
+execute as @a[tag=jiangshuzhe] run function kards:game/yongpaiku/shenji/wangzhibaoku/jiangshuzhe/event/random

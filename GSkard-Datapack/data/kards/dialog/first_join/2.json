@@ -1,7 +1,7 @@
 {
     "type": "minecraft:confirmation",
     "title": {
-        "type": "text",
+        
         "color": "gray",
         "bold": true,
         "translate": "json.kards.dialog.first_join.1.71",

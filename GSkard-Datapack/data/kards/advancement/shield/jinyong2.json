@@ -4,7 +4,14 @@
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "player": {
-                    "nbt": "{Tags:[\"diaolingtaidao\"]}"
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:netherite_sword",
+                            "predicates": {
+                                "minecraft:custom_data": "{kards:'凋零太刀'}"
+                            }
+                        }
+                    }
                 },
                 "damage": {
                     "blocked": true,

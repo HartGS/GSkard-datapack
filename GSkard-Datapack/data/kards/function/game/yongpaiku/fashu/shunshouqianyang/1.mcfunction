@@ -7,6 +7,6 @@ item replace entity @s weapon.offhand with air
 
 tag @a[tag=User] remove User
 tag @s add User
-execute if entity @s[team=red] as @r[team=blue,gamemode=adventure] run function kards:game/yongpaiku/fashu/shunshouqianyang/2
-execute if entity @s[team=blue] as @r[team=red,gamemode=adventure] run function kards:game/yongpaiku/fashu/shunshouqianyang/2
+execute if entity @s[team=red] at @s as @r[team=blue,gamemode=adventure] run function kards:game/yongpaiku/fashu/shunshouqianyang/2
+execute if entity @s[team=blue] at @s as @r[team=red,gamemode=adventure] run function kards:game/yongpaiku/fashu/shunshouqianyang/2
 tag @s remove User

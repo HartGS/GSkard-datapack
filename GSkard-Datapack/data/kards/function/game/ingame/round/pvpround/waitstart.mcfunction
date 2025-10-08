@@ -19,7 +19,7 @@ tellraw @a {translate: "kards.function.game.ingame.round.pvpround.waitstart.5", 
 tp @a[team=red] -179 -9 -164
 tp @a[team=blue] -242 -9 -164
 kill @e[type=!player,type=!marker,type=!#kards:display]
-gamemode spectator @a[tag=Spectator]
+gamemode spectator @a[tag=spectator]
 bossbar set pvptime players @a
 bossbar set pvptime visible true
 scoreboard players set time pvptime 600

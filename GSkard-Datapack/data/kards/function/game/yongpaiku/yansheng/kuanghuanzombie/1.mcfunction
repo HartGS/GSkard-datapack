@@ -1,6 +1,8 @@
 
 scoreboard players add @s zombie_enhance 1
 scoreboard players add @s[scores={zombie_enhance=20..}] zombie_enhance_2 1
+scoreboard players add @s[tag=Talent_libingmoma] Talent_libingmoma 1
+execute if score @s Talent_libingmoma matches 6 run function kards:game/player/talent/enable/libingmoma/1
 function kards:game/yongpaiku/use_general/tellraw
 tellraw @a [{translate: "kards.function.game.player.talent.enable.muyuankuanghuan.2.5", fallback: "目前使用次数为:",color:"white"},{score:{objective:"zombie_enhance",name:"@s"},color:"green",bold:false}]
 

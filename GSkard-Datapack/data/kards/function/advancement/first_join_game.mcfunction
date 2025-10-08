@@ -1,5 +1,5 @@
 tp @s 59 251 -26 -90 90
-spawnpoint @s 59 226 -26 -90
+spawnpoint @s 59 226 -26 0 -90
 gamemode spectator @s
 summon minecraft:firework_rocket ~ ~ ~
 tag @s add Un_Ready
