@@ -118,11 +118,16 @@ tag @s add Talent_qiongbingduwu_Damage
 
 scoreboard players set @s Talent_qiongbingduwu_Damage 0
 
-execute store result score @s Talent_qiongbingduwu_KardCount run data get entity @n[tag=copy,type=item] Item.components."minecraft:custom_data".K
-execute store result score @s Talent_qiongbingduwu_KardCountMax run data get entity @n[tag=copy,type=item] Item.components."minecraft:custom_data".Kmax
+execute store result score @s Talent_qiongbingduwu_KardCount run data get entity @n[tag=copy,type=item] Item.components."minecraft:custom_data".K 15
+execute store result score @s Talent_qiongbingduwu_KardCountMax run data get entity @n[tag=copy,type=item] Item.components."minecraft:custom_data".Kmax 15 
 
 scoreboard players operation @s Talent_qiongbingduwu_Damage += @s Talent_qiongbingduwu_KardCount
 scoreboard players operation @s Talent_qiongbingduwu_Damage += @s Talent_qiongbingduwu_KardCountMax
+
+execute store result score @s Talent_qiongbingduwu_Damage_temp1 store result score @s Talent_qiongbingduwu_Damage_temp2 run scoreboard players get @s Talent_qiongbingduwu_Damage
+scoreboard players set #system temp 10
+scoreboard players operation @s Talent_qiongbingduwu_Damage_temp1 /= #system temp
+scoreboard players operation @s Talent_qiongbingduwu_Damage_temp2 %= #system temp
 
 tag @s add Kard_Info_User
 
@@ -131,7 +136,7 @@ kill @n[tag=copy,type=item]
 
 tag @s remove Kard_Info_User
 
-tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text:"穷兵黩武",color:"aqua",hover_event:{action:"show_text",value:[{text:"在本局游戏内 任意回合开始时\n",color:"gray"},{text:"丢弃背包内1张牌\n",color:"red"},{text:"造成其等同于花费的破甲伤害分配至敌方所有玩家",color:"gold"}]}},{text:" 造成了",color:"gold"},{score:{name:"@s",objective:"Talent_qiongbingduwu_Damage"},color:"red"},{text:"点伤害",color:"gold"}]
+tellraw @a [{selector:"@s"},{text: "使用了",color:"gold"},{text:"穷兵黩武",color:"aqua",hover_event:{action:"show_text",value:[{text:"在本局游戏内 任意回合开始时\n",color:"gray"},{text:"丢弃背包内1张牌\n",color:"red"},{text:"造成其等同于花费的1.5倍破甲伤害分配至敌方所有玩家",color:"gold"}]}},{text:" 造成了",color:"gold"},{score:{name:"@s",objective:"Talent_qiongbingduwu_Damage_temp1"},color:"red"},{text:".",color:"red"},{score:{name:"@s",objective:"Talent_qiongbingduwu_Damage_temp2"},color:"red"},{text:"点伤害",color:"gold"}]
 execute if score @s Talent_qiongbingduwu_Damage matches 1.. run function kards:game/player/talent/enable/qiongbingduwu/2
 
 tag @s remove Talent_qiongbingduwu_Damage

@@ -5,5 +5,5 @@ execute if score #system Talent_Random_Mode matches 1 run scoreboard players set
 execute if score #system Talent_Random_Mode matches 2 run scoreboard players set @s Talent_Enable 2
 
 # Tellraw
-execute as @s[team=red] run tellraw @a[team=red,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"火力支援",color:"gold",hover_event:{action:"show_text",value:[{text:"在本局游戏内\n",color:"gray"},{text:"你每使用弩击杀生物 增加4%弩填装速度\n",color:"gold"},{text:"该效果可无限叠加",color:"dark_gray"}]}}]
-execute as @s[team=blue] run tellraw @a[team=blue,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"火力支援",color:"gold",hover_event:{action:"show_text",value:[{text:"在本局游戏内\n",color:"gray"},{text:"你每使用弩击杀生物 增加4%弩填装速度\n",color:"gold"},{text:"该效果可无限叠加",color:"dark_gray"}]}}]
+execute as @s[team=red] run tellraw @a[team=red,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"火力支援",color:"gold",hover_event:{action:"show_text",value:[{text:"在本局游戏内\n",color:"gray"},{text:"你每使用弩击杀生物 增加3%弩填装速度\n",color:"gold"},{text:"该效果可无限叠加",color:"dark_gray"}]}}]
+execute as @s[team=blue] run tellraw @a[team=blue,distance=0.1..] [{selector:"@s"},{text:"选择了",color:"gray"},{text:"火力支援",color:"gold",hover_event:{action:"show_text",value:[{text:"在本局游戏内\n",color:"gray"},{text:"你每使用弩击杀生物 增加3%弩填装速度\n",color:"gold"},{text:"该效果可无限叠加",color:"dark_gray"}]}}]

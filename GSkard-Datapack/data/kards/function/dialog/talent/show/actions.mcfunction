@@ -4,7 +4,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"友方回合结束时 ","color":"red"},{"text":"你的","color":"gray"},{"text":"K不再重置\n","color":"gold"},\
-        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于70%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
+        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于80%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
         ],\
         "action": {\
             "type": "run_command",\
@@ -61,7 +61,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "label": [{"text":"火力支援","color":"gold"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
-        {"text":"你每使用弩击杀生物 增加4%弩填装速度\n","color":"gold"},\
+        {"text":"你每使用弩击杀生物 增加3%弩填装速度\n","color":"gold"},\
         {"text":"该效果可无限叠加","color":"dark_gray"}\
         ],\
         "action": {\
@@ -317,7 +317,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内 任意回合开始时\n","color":"gray"},\
         {"text":"丢弃背包内1张牌\n","color":"red"},\
-        {"text":"造成其等同于花费的破甲伤害分配至敌方所有玩家","color":"gold"},\
+        {"text":"造成其等同于花费的1.5倍破甲伤害分配至敌方所有玩家","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -331,7 +331,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用","color":"gold"},{"text":"[法术牌]","color":"light_purple"},{"text":"时\n","color":"gold"},\
-        {"text":"随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
+        {"text":"有50%的概率随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
         {"text":"眩晕","color":"dark_gray"},{"text":"1s\n","color":"gray"},\
         {"text":"旋转","color":"gray"},{"text":"0.5s\n","color":"gray"},\
         {"text":"冻结","color":"aqua"},{"text":"1s\n","color":"gray"},\
@@ -379,7 +379,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"友方回合结束时 ","color":"red"},{"text":"你的","color":"gray"},{"text":"K不再重置\n","color":"gold"},\
-        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于70%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
+        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于80%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
         ],\
         "action": {\
             "type": "run_command",\
@@ -436,7 +436,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "label": [{"text":"火力支援","color":"gold"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
-        {"text":"你每使用弩击杀生物 增加4%弩填装速度\n","color":"gold"},\
+        {"text":"你每使用弩击杀生物 增加3%弩填装速度\n","color":"gold"},\
         {"text":"该效果可无限叠加","color":"dark_gray"}\
         ],\
         "action": {\
@@ -692,7 +692,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内 任意回合开始时\n","color":"gray"},\
         {"text":"丢弃背包内1张牌\n","color":"red"},\
-        {"text":"造成其等同于花费的破甲伤害分配至敌方所有玩家","color":"gold"},\
+        {"text":"造成其等同于花费的1.5倍破甲伤害分配至敌方所有玩家","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -706,7 +706,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用","color":"gold"},{"text":"[法术牌]","color":"light_purple"},{"text":"时\n","color":"gold"},\
-        {"text":"随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
+        {"text":"有50%的概率随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
         {"text":"眩晕","color":"dark_gray"},{"text":"1s\n","color":"gray"},\
         {"text":"旋转","color":"gray"},{"text":"0.5s\n","color":"gray"},\
         {"text":"冻结","color":"aqua"},{"text":"1s\n","color":"gray"},\
@@ -754,7 +754,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"友方回合结束时 ","color":"red"},{"text":"你的","color":"gray"},{"text":"K不再重置\n","color":"gold"},\
-        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于70%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
+        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于80%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
         ],\
         "action": {\
             "type": "run_command",\
@@ -811,7 +811,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "label": [{"text":"火力支援","color":"gold"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
-        {"text":"你每使用弩击杀生物 增加4%弩填装速度\n","color":"gold"},\
+        {"text":"你每使用弩击杀生物 增加3%弩填装速度\n","color":"gold"},\
         {"text":"该效果可无限叠加","color":"dark_gray"}\
         ],\
         "action": {\
@@ -1067,7 +1067,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内 任意回合开始时\n","color":"gray"},\
         {"text":"丢弃背包内1张牌\n","color":"red"},\
-        {"text":"造成其等同于花费的破甲伤害分配至敌方所有玩家","color":"gold"},\
+        {"text":"造成其等同于花费的1.5倍破甲伤害分配至敌方所有玩家","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1081,7 +1081,7 @@ execute if score #system Talent_Random_Mode matches 1 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用","color":"gold"},{"text":"[法术牌]","color":"light_purple"},{"text":"时\n","color":"gold"},\
-        {"text":"随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
+        {"text":"有50%的概率随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
         {"text":"眩晕","color":"dark_gray"},{"text":"1s\n","color":"gray"},\
         {"text":"旋转","color":"gray"},{"text":"0.5s\n","color":"gray"},\
         {"text":"冻结","color":"aqua"},{"text":"1s\n","color":"gray"},\
@@ -1129,7 +1129,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"友方回合结束时 ","color":"red"},{"text":"你的","color":"gray"},{"text":"K不再重置\n","color":"gold"},\
-        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于70%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
+        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于80%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1186,7 +1186,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "label": [{"text":"火力支援","color":"gold"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
-        {"text":"你每使用弩击杀生物 增加4%弩填装速度\n","color":"gold"},\
+        {"text":"你每使用弩击杀生物 增加3%弩填装速度\n","color":"gold"},\
         {"text":"该效果可无限叠加","color":"dark_gray"}\
         ],\
         "action": {\
@@ -1442,7 +1442,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内 任意回合开始时\n","color":"gray"},\
         {"text":"丢弃背包内1张牌\n","color":"red"},\
-        {"text":"造成其等同于花费的破甲伤害分配至敌方所有玩家","color":"gold"},\
+        {"text":"造成其等同于花费的1.5倍破甲伤害分配至敌方所有玩家","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1456,7 +1456,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用","color":"gold"},{"text":"[法术牌]","color":"light_purple"},{"text":"时\n","color":"gold"},\
-        {"text":"随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
+        {"text":"有50%的概率随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
         {"text":"眩晕","color":"dark_gray"},{"text":"1s\n","color":"gray"},\
         {"text":"旋转","color":"gray"},{"text":"0.5s\n","color":"gray"},\
         {"text":"冻结","color":"aqua"},{"text":"1s\n","color":"gray"},\
@@ -1504,7 +1504,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"友方回合结束时 ","color":"red"},{"text":"你的","color":"gray"},{"text":"K不再重置\n","color":"gold"},\
-        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于70%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
+        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于80%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1561,7 +1561,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "label": [{"text":"火力支援","color":"gold"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
-        {"text":"你每使用弩击杀生物 增加4%弩填装速度\n","color":"gold"},\
+        {"text":"你每使用弩击杀生物 增加3%弩填装速度\n","color":"gold"},\
         {"text":"该效果可无限叠加","color":"dark_gray"}\
         ],\
         "action": {\
@@ -1817,7 +1817,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内 任意回合开始时\n","color":"gray"},\
         {"text":"丢弃背包内1张牌\n","color":"red"},\
-        {"text":"造成其等同于花费的破甲伤害分配至敌方所有玩家","color":"gold"},\
+        {"text":"造成其等同于花费的1.5倍破甲伤害分配至敌方所有玩家","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1831,7 +1831,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用","color":"gold"},{"text":"[法术牌]","color":"light_purple"},{"text":"时\n","color":"gold"},\
-        {"text":"随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
+        {"text":"有50%的概率随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
         {"text":"眩晕","color":"dark_gray"},{"text":"1s\n","color":"gray"},\
         {"text":"旋转","color":"gray"},{"text":"0.5s\n","color":"gray"},\
         {"text":"冻结","color":"aqua"},{"text":"1s\n","color":"gray"},\
@@ -1879,7 +1879,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"友方回合结束时 ","color":"red"},{"text":"你的","color":"gray"},{"text":"K不再重置\n","color":"gold"},\
-        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于70%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
+        {"text":"但你每回合只能获得","color":"gray"},{"text":"等同于80%Kmax的K\n","color":"red"},{"text":"该计算结果向下取整","color":"dark_gray"}\
         ],\
         "action": {\
             "type": "run_command",\
@@ -1936,7 +1936,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "label": [{"text":"火力支援","color":"gold"}],\
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
-        {"text":"你每使用弩击杀生物 增加4%弩填装速度\n","color":"gold"},\
+        {"text":"你每使用弩击杀生物 增加3%弩填装速度\n","color":"gold"},\
         {"text":"该效果可无限叠加","color":"dark_gray"}\
         ],\
         "action": {\
@@ -2190,7 +2190,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random_
         "tooltip": [\
         {"text":"在本局游戏内 任意回合开始时\n","color":"gray"},\
         {"text":"丢弃背包内1张牌\n","color":"red"},\
-        {"text":"造成其等同于花费的破甲伤害分配至敌方所有玩家","color":"gold"},\
+        {"text":"造成其等同于花费的1.5倍破甲伤害分配至敌方所有玩家","color":"gold"},\
         ],\
         "action": {\
             "type": "run_command",\
@@ -2204,7 +2204,7 @@ execute if score #system Talent_Random_Mode matches 2 if score @s Talent_Random6
         "tooltip": [\
         {"text":"在本局游戏内\n","color":"gray"},\
         {"text":"你每次使用","color":"gold"},{"text":"[法术牌]","color":"light_purple"},{"text":"时\n","color":"gold"},\
-        {"text":"随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
+        {"text":"有50%的概率随机对1个敌方玩家造成如下效果之一\n","color":"gold"},\
         {"text":"眩晕","color":"dark_gray"},{"text":"1s\n","color":"gray"},\
         {"text":"旋转","color":"gray"},{"text":"0.5s\n","color":"gray"},\
         {"text":"冻结","color":"aqua"},{"text":"1s\n","color":"gray"},\

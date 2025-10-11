@@ -56,7 +56,14 @@ scoreboard players add @a[scores={muyuankuanghuan=1,CanuseKard=1}] cishu 2
 
 #超频
 scoreboard players remove @a[scores={ChaoPin=1..}] ChaoPin 1
-#> buff生效
+
+#图腾
+execute if entity @e[tag=tuteng] run tellraw @a [{text: "\n======================\n",color:"gray",bold:true}]
+execute if entity @e[tag=tuteng,team=red] run tellraw @a [{text:"红队",color:red},{text:"当前拥有图腾:\n",color:gold},{selector:"@e[tag=tuteng,team=red]"}]
+execute if entity @e[tag=tuteng,team=blue] run tellraw @a [{text:"蓝队",color:blue},{text:"当前拥有图腾:\n",color:gold},{selector:"@e[tag=tuteng,team=blue]"}]
+execute if entity @e[tag=tuteng] run tellraw @a [{text: "",color:"gray",bold:true}]
+
+#> 牌效
 tellraw @a [{text: "==========事件==========",color:"gray",bold:true}]
 #重伤
 scoreboard players remove @a[scores={ZhongShang_Round=1..}] ZhongShang_Round 1

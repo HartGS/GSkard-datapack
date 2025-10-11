@@ -26,6 +26,6 @@ tag @e remove JiangShuZhe_yiming_rided
 
 ## 天赋
 #终焉之行
-execute as @a[tag=Talent_zhongyanzhixing,scores={CanuseKard=0}] run function kards:game/player/talent/enable/zhongyanzhixing/1
+execute as @a[tag=Talent_zhongyanzhixing,scores={CanuseKard=1}] run function kards:game/player/talent/enable/zhongyanzhixing/1
 #穷兵黩武
 execute as @a[tag=Talent_qiongbingduwu] run function kards:game/player/talent/enable/qiongbingduwu/1

@@ -11,8 +11,10 @@ scoreboard players add 红队 touxiang 0
 scoreboard players add 蓝队 touxiang 0
 scoreboard players add @a kardCount 0
 scoreboard players add @a jinziqifeng 0
-#图腾buff
-function kards:game/yongpaiku/tuteng/buff
+#图腾
+function kards:game/ingame/tuteng/buff
+
+execute if entity @e[tag=tuteng,distance=0.01..] run function kards:game/ingame/tuteng/health/1
 #神器
 function kards:game/yongpaiku/shenji/wangzhibaoku/general
 #PVP

@@ -22,6 +22,7 @@ bossbar add minecraft:pvptime {text:"等待开放",color:"green"}
 bossbar set minecraft:roundtime color white
 bossbar set minecraft:pvptime color green
 #注册计分项目
+scoreboard objectives add Mob_Health dummy
 scoreboard objectives add Spectator_lifeNum dummy
 scoreboard objectives add Spectator_Pos.Y dummy
 scoreboard objectives add Relax_Round dummy
@@ -31,6 +32,8 @@ scoreboard objectives add Talent_yongyuanzhongcheng_Temp dummy
 scoreboard objectives add Talent_yongyuanzhongcheng_ dummy
 scoreboard objectives add Talent_yongyuanzhongcheng dummy
 scoreboard objectives add Talent_zhongyanzhixing dummy
+scoreboard objectives add Talent_zhongyanzhixing_temp1 dummy
+scoreboard objectives add Talent_zhongyanzhixing_temp2 dummy
 scoreboard objectives add Talent_libingmoma_ dummy
 scoreboard objectives add Talent_libingmoma dummy
 scoreboard objectives add Talent_gongsheng_damage dummy
@@ -51,6 +54,8 @@ scoreboard objectives add Talent_dengshenchangjie_tellraw dummy
 scoreboard objectives add Talent_qiongbingduwu_KardCount dummy
 scoreboard objectives add Talent_qiongbingduwu_KardCountMax dummy
 scoreboard objectives add Talent_qiongbingduwu_Damage dummy
+scoreboard objectives add Talent_qiongbingduwu_Damage_temp1 dummy
+scoreboard objectives add Talent_qiongbingduwu_Damage_temp2 dummy
 scoreboard objectives add Talent_zhanshudaji dummy
 
 scoreboard objectives add Crossbow_RS dummy
@@ -323,14 +328,14 @@ scoreboard objectives add Ready_count dummy
 scoreboard objectives add Ready_Num dummy
 scoreboard objectives add chuandai_xjhj dummy
 scoreboard objectives add Color dummy
-scoreboard objectives add tuteng_Health dummy
-scoreboard objectives add tuteng_Health_last dummy
-scoreboard objectives add tuteng_Health_temp1 dummy
-scoreboard objectives add tuteng_Health_temp2 dummy
-scoreboard objectives add tuteng_Health_temp1_ dummy
-scoreboard objectives add tuteng_Health_temp2_ dummy
-scoreboard objectives add tuteng_Health_temp1_last dummy
-scoreboard objectives add tuteng_Health_temp2_last dummy
+scoreboard objectives add Mob_Health dummy
+scoreboard objectives add Mob_Health_last dummy
+scoreboard objectives add Mob_Health_temp1 dummy
+scoreboard objectives add Mob_Health_temp2 dummy
+scoreboard objectives add Mob_Health_temp1_ dummy
+scoreboard objectives add Mob_Health_temp2_ dummy
+scoreboard objectives add Mob_Health_temp1_last dummy
+scoreboard objectives add Mob_Health_temp2_last dummy
 scoreboard objectives add hurt_lindongzhikai dummy
 scoreboard objectives add stophurt_lindongzhikai dummy
 scoreboard objectives add in_lindongzhikai dummy
@@ -452,5 +457,5 @@ data modify storage settings kard_count set value \
     shipin:105\
 }
 
-# GSkard-1.54
-tellraw @a ["==========================\n",{color:"#2a17fd",text:"         "},{color:"#f19013",text:"G"},{color:"#ed7d19",text:"S"},{color:"#ea6a1f",text:"k"},{color:"#e75725",text:"a"},{color:"#e3442b",text:"r"},{color:"#e03131",text:"d"},{color:"gold",text:"已经加载！"},"\n",{color:"aqua",text:"             版本："},{color:"green",text:"1.54"},"\n=========================="]
+# GSkard-1.53
+tellraw @a ["==========================\n",{color:"#2a17fd",text:"         "},{color:"#f19013",text:"G"},{color:"#ed7d19",text:"S"},{color:"#ea6a1f",text:"k"},{color:"#e75725",text:"a"},{color:"#e3442b",text:"r"},{color:"#e03131",text:"d"},{color:"gold",text:"已经加载！"},"\n",{color:"aqua",text:"             版本："},{color:"green",text:"1.53"},"\n=========================="]
