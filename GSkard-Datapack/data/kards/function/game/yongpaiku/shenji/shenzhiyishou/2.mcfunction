@@ -1,4 +1,4 @@
-
+execute unless items entity @s container.* #kards:kard run return run tellraw @a [{selector:"@s"},{text: "的滚木被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{text: "偷走了!",color:"aqua"}]
 
 execute store result score @s random_clear run random value 0..35
 execute if score @s random_clear matches 0 unless items entity @s container.0 #kards:kard run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
@@ -117,13 +117,18 @@ execute if score @s random_clear matches 33 run item replace entity @s container
 execute if score @s random_clear matches 34 run item replace entity @s container.34 with air
 execute if score @s random_clear matches 35 run item replace entity @s container.35 with air
 
+tag @s add Kard_Info_User
+
+execute as @n[tag=copy,type=item] run function kards:game/yongpaiku/use_general/info
+
+tag @s remove Kard_Info_User
+
 data modify entity @n[tag=copy,type=item] PickupDelay set value 1
 tag @n[tag=copy,type=item] add copy_end
 tag @n[tag=copy,type=item] remove copy
+kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_11"}},tag=copy_end]
 
 execute if entity @s[team=red] if entity @a[team=red,gamemode=adventure,tag=!shenzhiyishou] as @r[team=red,gamemode=adventure,tag=!shenzhiyishou] run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 execute if entity @s[team=blue] if entity @a[team=blue,gamemode=adventure,tag=!shenzhiyishou] as @r[team=blue,gamemode=adventure,tag=!shenzhiyishou] run return run function kards:game/yongpaiku/shenji/shenzhiyishou/2
 
-tellraw @a [{selector:"@a[tag=shenzhiyishou]"},{text: "的牌被",color:"aqua"},{selector:"@a[tag=User,limit=1]"},{text: "偷走了！",color:"aqua"}]
 tag @a[tag=shenzhiyishou] remove shenzhiyishou
-kill @e[type=item,nbt={Item:{id:"minecraft:music_disc_11"}},tag=copy_end]

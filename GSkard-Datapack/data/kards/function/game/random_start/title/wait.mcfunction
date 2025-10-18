@@ -25,8 +25,8 @@ execute if score #system random_start matches 7 run title @a subtitle [{"text":"
 execute if score #system random_start matches 8 run title @a title {text:"狂轰滥炸",color:"gold",bold:true}
 execute if score #system random_start matches 8 run title @a subtitle [{"text":"所有人只能抽取到[爆炸军团]","color":"red",bold:true}]
 
-execute if score #system random_start matches 9 run title @a title {text:"灾难之星",color:"gold",bold:true}
-execute if score #system random_start matches 9 run title @a subtitle [{"text":"讲述[河豚][雷暴][失重]的故事","color":"gray"}]
+execute if score #system random_start matches 9 run title @a title {text:"时光碎片",color:"gold",bold:true}
+execute if score #system random_start matches 9 run title @a subtitle [{"text":"讲述《异闻》","color":"gray"}]
 
 execute if score #system random_start matches 10 run title @a title {text:"Move or Die",color:"gold",bold:true}
 execute if score #system random_start matches 10 run title @a subtitle [{"text":"不动就会死!","color":"red",bold:true}]

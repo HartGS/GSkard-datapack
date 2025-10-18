@@ -1,0 +1,3 @@
+scoreboard players set #kard_moyuguai kardCount 2
+
+give @s music_disc_mall[item_name=[{text: "2K",color:"aqua"},{text:" "},{text: "墨鱼怪",color:"blue"}],lore=[{text: "基本牌",color:"blue",italic:false},[{text: "召唤一只",color:"gray",italic:false},{text: "头带墨鱼的僵尸",color:"gold",italic:false}],[{text: "墨鱼若接触到地面 则使周围生物",color:"gray",italic:false},{text: "失明",color:"gold",italic:false}]],tooltip_display={hidden_components:["jukebox_playable"]},custom_data={kards:'墨鱼怪',K:2},tooltip_style="kards:kard/common"]

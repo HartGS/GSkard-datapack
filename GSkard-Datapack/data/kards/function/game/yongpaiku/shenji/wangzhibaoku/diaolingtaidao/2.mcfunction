@@ -18,10 +18,14 @@ execute if entity @e[tag=diaolingtaidao_hurt] run scoreboard players remove @s d
 execute unless score @s diaolingtaidao_Time matches 1.. run scoreboard players set @s diaolingtaidao_Time 0
 function kards:game/yongpaiku/shenji/wangzhibaoku/diaolingtaidao/3
 
-#scoreboard players remove @s diaolingtaidao_tujing 1
+execute if score #system GameStatus matches 0 run return fail
 
-#execute if block ~ ~ ~ air run tp @s ^ ^ ^0.0625
-##execute unless block ~ ~ ~ air run scoreboard players set @s diaolingtaidao_tujing 0
-#execute unless block ~ ~ ~ air run tp @s ^ ^ ^0.0625
+execute unless score #system GameStatus matches 2 if score #system dituxuanze matches 1..100 at @e[tag=b_dw] positioned ~-0.5 -1 ~-0.5 unless entity @s[dx=24,dz=54,dy=7.5] run tellraw @s [{text:"§r§8§l[凋零太刀]",color:"dark_gray"},{text:"§k(乱码)(乱码)(乱码)§r§7§l..回..到..战..场..§k(乱码)(乱码)(乱码)",color:"gray"}]
 
-#execute if score @s diaolingtaidao_tujing matches 1.. at @s run return run function this
+execute unless score #system GameStatus matches 2 if score #system dituxuanze matches 1..100 as @s[team=red] at @e[tag=b_dw] positioned ~-0.5 -1 ~-0.5 unless entity @s[dx=24,dz=54,dy=7.5] at @e[tag=red_marker_7,limit=1] run tp @s ~ 0 ~
+execute unless score #system GameStatus matches 2 if score #system dituxuanze matches 1..100 as @s[team=blue] at @e[tag=b_dw] positioned ~-0.5 -1 ~-0.5 unless entity @s[dx=24,dz=54,dy=7.5] at @e[tag=blue_marker_7,limit=1] run tp @s ~ 0 ~
+
+execute unless score #system GameStatus matches 2 if score #system dituxuanze matches 101.. at @e[tag=b_dw] positioned ~-0.5 -1 ~-0.5 unless entity @s[dx=24,dz=74,dy=7.5] run tellraw @s [{text:"§r§87§l[凋零太刀]",color:"dark_gray"},{text:"§k(乱码)(乱码)(乱码)§r§7§l..回..到..战..场..§k(乱码)(乱码)(乱码)",color:"gray"}]
+
+execute unless score #system GameStatus matches 2 if score #system dituxuanze matches 101.. as @s[team=red] at @e[tag=b_dw] positioned ~-0.5 -1 ~-0.5 unless entity @s[dx=34,dz=74,dy=7.5] at @e[tag=red_marker_7,limit=1] run tp @s ~ 0 ~
+execute unless score #system GameStatus matches 2 if score #system dituxuanze matches 101.. as @s[team=blue] at @e[tag=b_dw] positioned ~-0.5 -1 ~-0.5 unless entity @s[dx=34,dz=74,dy=7.5] at @e[tag=blue_marker_7,limit=1] run tp @s ~ 0 ~

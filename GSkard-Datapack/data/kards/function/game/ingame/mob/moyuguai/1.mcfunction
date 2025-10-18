@@ -1,0 +1,1 @@
+execute if data entity @s {OnGround:1b} run function kards:game/ingame/mob/moyuguai/2

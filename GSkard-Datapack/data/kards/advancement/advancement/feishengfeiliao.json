@@ -1,0 +1,74 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:composter",
+      "count": 1
+    },
+    "title": {
+      "text": "飞升...肥料？"
+    },
+    "description": {
+      "text": "把\"飞升护符\"放进堆肥桶"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "kards:advancement/jiaocheng",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:sunflower",
+                      "predicates": {
+                        "minecraft:custom_data": "{kards:'飞升护符'}"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "items": "minecraft:sunflower",
+                      "predicates": {
+                        "minecraft:custom_data": "{kards:'飞升护符'}"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:composter"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "kards:advancement/feishengfeiliao"
+  }
+}

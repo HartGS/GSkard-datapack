@@ -16,3 +16,6 @@ execute as @a[tag=Talent_yongyuanzhongcheng,gamemode=!spectator] run function ka
 
 execute if entity @e[tag=yongyuanzhongcheng_Marker,team=red] as @e[tag=yongyuanzhongcheng_Marker,team=red] unless entity @a[team=red,gamemode=!spectator] run kill @s
 execute if entity @e[tag=yongyuanzhongcheng_Marker,team=blue] as @e[tag=yongyuanzhongcheng_Marker,team=blue] unless entity @a[team=blue,gamemode=!spectator] run kill @s
+
+#扎扎师
+scoreboard players set @a[scores={Talent_zhazhashi=1}] Talent_zhazhashi 0

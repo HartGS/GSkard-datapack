@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bone_meal",
+      "count": 1
+    },
+    "title": {
+      "text": "酸辣无骨骨粉"
+    },
+    "description": {
+      "text": "你居然把\"酸辣无骨鸡爪\"分解成骨粉了?!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "kards:advancement/jiaocheng",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "minecraft:bone_meal",
+        "ingredients": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{kards:'鸡爪'}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "kards:advancement/suanlawugugufen"
+  }
+}

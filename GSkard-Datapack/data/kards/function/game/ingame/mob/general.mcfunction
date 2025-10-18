@@ -6,6 +6,8 @@ execute if entity @e[type=enderman,distance=0.1..] run function kards:game/ingam
 execute if entity @e[type=shulker,distance=0.1..] run function kards:game/ingame/mob/shulker
 #无人机
 execute if entity @e[tag=wurenji,distance=0.1..] run function kards:game/ingame/mob/wurenji
+#墨鱼怪
+execute if entity @e[tag=moyuguai,distance=0.1..] as @e[tag=moyuguai,distance=0.1..] run function kards:game/ingame/mob/moyuguai/1
 #唤魔者
 execute if entity @e[type=evoker,distance=0.1..] run function kards:game/ingame/mob/evoker
 #幻术师
