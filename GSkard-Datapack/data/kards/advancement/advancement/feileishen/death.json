@@ -5,10 +5,10 @@
       "count": 1
     },
     "title": {
-      "text": "幻影快递"
+      "translate": "json.kards.advancement.advancement.feileishen.death.21"
     },
     "description": {
-      "text": "使用飞雷神然后死亡"
+      "translate": "json.kards.advancement.advancement.feileishen.death.22"
     },
     "frame": "task",
     "show_toast": true,

@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "现在是私事了!"
+            "translate": "json.kards.advancement.advancement.round.31.45"
         },
         "description": {
-            "text": "游戏回合达到第31回合"
+            "translate": "json.kards.advancement.advancement.round.31.46"
         },
         "frame": "task",
         "show_toast": true,

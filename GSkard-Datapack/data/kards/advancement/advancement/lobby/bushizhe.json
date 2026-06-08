@@ -6,10 +6,10 @@
             "count": 1
         },
         "title": {
-            "text": "不是这"
+            "translate": "json.kards.advancement.advancement.lobby.bushizhe.35"
         },
         "description": {
-            "text": "貌似走错路了"
+            "translate": "json.kards.advancement.advancement.lobby.bushizhe.36"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

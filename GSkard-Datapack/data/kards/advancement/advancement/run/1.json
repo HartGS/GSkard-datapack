@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "跑酷高手"
+            "translate": "json.kards.advancement.advancement.run.1.49"
         },
         "description": {
-            "text": "在60s内完成跑酷"
+            "translate": "json.kards.advancement.advancement.run.1.50"
         },
         "frame": "task",
         "show_toast": true,

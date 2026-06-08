@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "所有或者..."
+            "translate": "json.kards.advancement.advancement.suoyouhuozhe.15"
         },
         "description": {
-            "text": "使用\"赌命\"平局,享受少见的和平吧!"
+            "translate": "json.kards.advancement.advancement.suoyouhuozhe.16"
         },
         "frame": "task",
         "show_toast": true,

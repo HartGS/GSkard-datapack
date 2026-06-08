@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "六百六十六磕到甲沟炎了"
+            "translate": "json.kards.advancement.advancement.jiagouyan.7"
         },
         "description": {
-            "text": "“成功”地摔死!"
+            "translate": "json.kards.advancement.advancement.jiagouyan.8"
         },
         "frame": "task",
         "show_toast": true,

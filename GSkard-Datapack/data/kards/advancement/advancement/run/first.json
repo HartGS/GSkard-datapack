@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "跑酷糕手"
+            "translate": "json.kards.advancement.advancement.run.first.59"
         },
         "description": {
-            "text": "完成1次跑酷"
+            "translate": "json.kards.advancement.advancement.run.first.60"
         },
         "frame": "task",
         "show_toast": true,

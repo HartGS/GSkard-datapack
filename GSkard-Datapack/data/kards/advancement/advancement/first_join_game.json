@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "GSkard"
+            "translate": "json.kards.advancement.advancement.first_join_game.3"
         },
         "description": {
-            "text": "你管这叫卡牌对战?"
+            "translate": "json.kards.advancement.advancement.first_join_game.4"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

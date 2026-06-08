@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "步豪,我的膀胱..."
+            "translate": "json.kards.advancement.advancement.round.51.47"
         },
         "description": {
-            "text": "游戏回合达到第51回合"
+            "translate": "json.kards.advancement.advancement.round.51.48"
         },
         "frame": "task",
         "show_toast": true,

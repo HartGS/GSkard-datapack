@@ -6,10 +6,10 @@
             "count": 1
         },
         "title": {
-            "text": "神秘跑酷点"
+            "translate": "json.kards.advancement.advancement.lobby.find_running.37"
         },
         "description": {
-            "text": "lengxiaoCN:我会一直看着你的...永远"
+            "translate": "json.kards.advancement.advancement.lobby.find_running.38"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",

@@ -5,10 +5,10 @@
       "count": 1
     },
     "title": {
-      "text": "负债累累"
+      "translate": "json.kards.advancement.advancement.fuzhaileilei.5"
     },
     "description": {
-      "text": "Kmax达到负数"
+      "translate": "json.kards.advancement.advancement.fuzhaileilei.6"
     },
     "frame": "task",
     "show_toast": true,

@@ -5,10 +5,10 @@
       "count": 1
     },
     "title": {
-      "text": "幻影杀手"
+      "translate": "json.kards.advancement.advancement.feileishen.killer.25"
     },
     "description": {
-      "text": "使用飞雷神并击杀一个玩家"
+      "translate": "json.kards.advancement.advancement.feileishen.killer.26"
     },
     "frame": "task",
     "show_toast": true,

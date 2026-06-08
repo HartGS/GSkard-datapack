@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "为什么要演奏春日影!?"
+            "translate": "json.kards.advancement.advancement.death_in_chunriying.1"
         },
         "description": {
-            "text": "在\"春日影\"法术期间死亡"
+            "translate": "json.kards.advancement.advancement.death_in_chunriying.2"
         },
         "frame": "task",
         "show_toast": true,

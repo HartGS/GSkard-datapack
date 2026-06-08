@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "无休复苏"
+            "translate": "json.kards.advancement.advancement.wuxiuzhihuo.1.61"
         },
         "description": {
-            "text": "无休止火的“无休”点数达到180点"
+            "translate": "json.kards.advancement.advancement.wuxiuzhihuo.1.62"
         },
         "frame": "task",
         "show_toast": true,

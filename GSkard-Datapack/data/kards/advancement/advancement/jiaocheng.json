@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "完成新手教程"
+            "translate": "json.kards.advancement.advancement.jiaocheng.9"
         },
         "description": {
-            "text": "搞牌,启动!"
+            "translate": "json.kards.advancement.advancement.jiaocheng.10"
         },
         "frame": "task",
         "show_toast": true,

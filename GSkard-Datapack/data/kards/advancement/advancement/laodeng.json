@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "老登"
+            "translate": "json.kards.advancement.advancement.laodeng.11"
         },
         "description": {
-            "text": "搞牌牢玩家"
+            "translate": "json.kards.advancement.advancement.laodeng.12"
         },
         "frame": "task",
         "show_toast": true,

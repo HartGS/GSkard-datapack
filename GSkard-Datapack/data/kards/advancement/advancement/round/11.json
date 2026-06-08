@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "现在是困难模式吗?"
+            "translate": "json.kards.advancement.advancement.round.11.43"
         },
         "description": {
-            "text": "游戏回合达到第11回合"
+            "translate": "json.kards.advancement.advancement.round.11.44"
         },
         "frame": "task",
         "show_toast": true,

@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "中道崩殂"
+            "translate": "json.kards.advancement.advancement.jinzijue.zhongdaobengcu.33"
         },
         "description": {
-            "text": "禁字决层数大于等于4层时死亡"
+            "translate": "json.kards.advancement.advancement.jinzijue.zhongdaobengcu.34"
         },
         "frame": "task",
         "show_toast": true,

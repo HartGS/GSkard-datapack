@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "半步仙"
+            "translate": "json.kards.advancement.advancement.jinzijue.banbuxian.27"
         },
         "description": {
-            "text": "禁字决层数达到7层"
+            "translate": "json.kards.advancement.advancement.jinzijue.banbuxian.28"
         },
         "frame": "task",
         "show_toast": true,

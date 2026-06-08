@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "跑酷高手..?"
+            "translate": "json.kards.advancement.advancement.run.5.57"
         },
         "description": {
-            "text": "在1s内完成跑酷...世上竟有超人?"
+            "translate": "json.kards.advancement.advancement.run.5.58"
         },
         "frame": "challenge",
         "show_toast": true,

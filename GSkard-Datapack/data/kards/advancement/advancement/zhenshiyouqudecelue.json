@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "真是有趣的策略"
+            "translate": "json.kards.advancement.advancement.zhenshiyouqudecelue.19"
         },
         "description": {
-            "text": "敌方使用\"时空崩塌\"杀死敌方监守者"
+            "translate": "json.kards.advancement.advancement.zhenshiyouqudecelue.20"
         },
         "frame": "task",
         "show_toast": true,

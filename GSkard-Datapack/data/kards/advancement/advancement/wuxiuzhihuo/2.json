@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "永恒熔铸"
+            "translate": "json.kards.advancement.advancement.wuxiuzhihuo.2.63"
         },
         "description": {
-            "text": "无休止火的“无休”点数达到700点"
+            "translate": "json.kards.advancement.advancement.wuxiuzhihuo.2.64"
         },
         "frame": "challenge",
         "show_toast": true,

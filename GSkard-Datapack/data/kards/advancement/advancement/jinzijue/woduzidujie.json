@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "我独自渡劫"
+            "translate": "json.kards.advancement.advancement.jinzijue.woduzidujie.31"
         },
         "description": {
-            "text": "禁字决层数达到10层"
+            "translate": "json.kards.advancement.advancement.jinzijue.woduzidujie.32"
         },
         "frame": "challenge",
         "show_toast": true,

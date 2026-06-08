@@ -5,10 +5,10 @@
             "count": 1
         },
         "title": {
-            "text": "飞雷神!"
+            "translate": "json.kards.advancement.advancement.feileishen.first_use.23"
         },
         "description": {
-            "text": "首次飞雷神"
+            "translate": "json.kards.advancement.advancement.feileishen.first_use.24"
         },
         "frame": "task",
         "show_toast": true,

@@ -6,10 +6,10 @@
             "count": 1
         },
         "title": {
-            "text": "神秘打野点"
+            "translate": "json.kards.advancement.advancement.lobby.shenmidayedian.39"
         },
         "description": {
-            "text": "这是何处阿?"
+            "translate": "json.kards.advancement.advancement.lobby.shenmidayedian.40"
         },
         "background": "minecraft:block/chiseled_tuff_bricks",
         "frame": "task",
